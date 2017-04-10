@@ -1,0 +1,21 @@
+{% extends 'personal/base.html' %}
+{% load static %}
+
+<!-- MAIN SECTION -->
+    {% block content%}
+
+		<div class="section top-section container-fluid">
+		<div class="row">
+			<video poster="{% static  'media/head.png'%}" autoplay="true" loop>
+				<source src="{% static 'media/head.webm' %}" type ="video/webm">
+			</video>
+
+			<div class="text centered">
+				<img id = "profile-pic" src="{% static 'media/profile.png' %}" alt="profile-picture">
+				<h1 id="main-head"><b>Hi, I am RAJU JHA</b></h1>
+				<h2>I am a <span class="element"></span></h2>
+				<button type="button" id="home-btn" class="mdl-button mdl-js-button mdl-button--raised"><a href="files/resume.pdf">Visit Resume</a></button>
+			</div>
+		</div>
+		</div>
+    {% endblock %}

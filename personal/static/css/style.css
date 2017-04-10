@@ -1,0 +1,142 @@
+*{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+body, html{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: gainsboro;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+@media only screen and (max-width: 500px) {
+    #main-head{
+		font-size: 1em
+	}
+	#profile-pic{
+		width: 10px;
+		height: 10px;
+	}
+}
+
+.section{
+	height: 100%;
+	text-align: center;
+	position: absolute;
+}
+
+.subsection{
+	height: 50%;
+}
+
+.centered{
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* NAVIGATION SECTION */
+.demo-layout-transparent {
+  background: url('../assets/demos/transparent.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+	
+	position: fixed;
+}
+
+/*nav{
+	height: 5em;
+	position: fixed;
+	z-index: 99;
+	background-color: rgba(0,0,70, 0.6);
+	width: 100%;
+	text-align: center;
+}
+
+nav a{
+	text-decoration: none;
+	line-height: 5em;
+	padding: 1.5em;
+	color: white;
+}
+
+nav a:hover{
+	color: gray;
+	text-decoration: none;
+}*/
+/* MAIN SECTION START*/
+
+.top-section{
+	overflow: hidden;
+	height: 100%;
+	size: cover;
+	width: 100%;
+	background-image: url("head.png");
+}
+
+.text{
+	z-index: 2;
+	position: absolute;
+	color: white;
+}
+
+video{
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	min-height: 100%;
+	min-width: 100%;
+	width: auto;
+	height: auto;
+	z-index: 1;
+}
+
+#profile-pic{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	border: 2px solid white;
+
+}
+
+#home-btn>a{
+	color: white;
+}
+
+#main-head{
+	font-size: 3em;
+}
+/* MAIN SECTION END */
+
+/* BLINKING CURSOR START */
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s inffinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* BLINKING CURSOR END */

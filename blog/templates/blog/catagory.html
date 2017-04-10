@@ -1,0 +1,7 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for catagory in object_list %}
+        <h1>{{ catagory.catagory_title }}</h1>
+    {% endfor %}
+{% endblock %}

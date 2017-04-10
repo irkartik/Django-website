@@ -1,0 +1,37 @@
+<html>
+	<head>
+		<title>Raju Jha</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- LINKED CSS FILES -->
+		{% load static %}
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+		<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+	    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+		
+		<!-- LINKED JS FILES -->
+		<script src="{% static 'js/typed.js' %}"></script>
+		<script>
+		  document.addEventListener('DOMContentLoaded', function(){
+		      Typed.new('.element', {
+		        strings: ["Developer", "Web Developer", "Full Stack Web Developer! "],
+		        typeSpeed: 200,
+		      });
+		  });
+		</script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        {% include 'personal/includes/navigation.html' %}
+        {% block content %}
+        
+        {% endblock %}
+
+	</head>
+	<body>
+
+	</body>
+
+</html>
